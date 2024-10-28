@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .open-sans-font {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -19,6 +25,10 @@
 body {
     font-family: "Open Sans";
     background-color: #f9fafc;
+}
+
+.content {
+    padding: 10px;
 }
 
 a.nav-link {
@@ -43,7 +53,10 @@ a.nav-link-chirpus {
 .nav-link-chirpus:visited {
     color: #000;
     text-decoration: none;
+}
 
+.nav-bar {
+    margin-bottom: 10px;
 }
 
 .nav-link:visited {
@@ -87,17 +100,20 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    width: 400px;
-    margin: 0px;
-
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
     background-color: rgba(247, 193, 162, 0.7);
 }
 
-.footer-link {
+.footer-links {
     display: flex;
+    column-gap: 6px;
+}
+
+.footer-link {
     flex-direction: column;
-    margin: 5px;
     font-size: 10px;
     color: #69696a;
     text-decoration: none;  
@@ -109,6 +125,7 @@ h1 {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        margin-bottom: 100px;
 
     .navigation {
         display: flex;
